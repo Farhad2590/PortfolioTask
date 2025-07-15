@@ -51,19 +51,8 @@ Check out the live website: [https://portfolioservicework.netlify.app/](https://
 5. Open http://localhost:3000 in your browser
 
 
-## 🏗️ Project Structure
-portfolio-service-work/
-├── public/              # Static files
-├── src/
-│   ├── assets/          # Images, fonts, etc.
-│   ├── components/      # all components
-│   ├── App.jsx          # Main app component
-│   └── main.jsx         # Entry point
-├── .gitignore
-├── package.json
-├── README.md
-└── vite.config.js
-## 📬 Contact
+
+## Contact
  For inquiries or feedback, please reach out:
 
 Email:farhadhossen2590@gmail.com
