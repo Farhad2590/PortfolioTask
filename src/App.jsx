@@ -8,11 +8,12 @@ import BrandValuesSection from "./components/BrandValuesSection";
 import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
 import ContactSection from "./components/ContactSection";
+import NavbarSection from "./components/NavbarSection";
 
 const App = () => {
   return (
     <div className="">
-
+      <NavbarSection/>
       <HeroSection />
       <ServicesSection />
       <PortfolioSection />

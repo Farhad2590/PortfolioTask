@@ -1,12 +1,67 @@
-# React + Vite
+# Portfolio Service Work
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
-Currently, two official plugins are available:
+A modern portfolio website built with React, Tailwind CSS, Framer Motion animations, and Lucide React icons.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+Check out the live website: [https://portfolioservicework.netlify.app/](https://portfolioservicework.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- **Modern UI** with smooth animations
+- **Fully responsive** design
+- **Dark/light mode** (if implemented)
+- **Interactive elements** with Framer Motion
+- **Performance optimized** with Vite
+- **SEO friendly** structure
+- **Contact form** functionality
+
+## 🛠️ Technologies Used
+
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Bundler**: Vite
+- **Hosting**: Netlify
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/portfolio-service-work.git
+   ```
+2. Navigate to project directory:
+   ```cd portfolio-service-work```
+3.Install dependencies:
+```npm install```
+4.Start development server:
+```npm run dev```
+5.Open http://localhost:3000 in your browser
+
+## 🏗️ Project Structure
+portfolio-service-work/
+├── public/              # Static files
+├── src/
+│   ├── assets/          # Images, fonts, etc.
+│   ├── components/      # all components
+│   ├── App.jsx          # Main app component
+│   └── main.jsx         # Entry point
+├── .gitignore
+├── package.json
+├── README.md
+└── vite.config.js
+## 📬 Contact
+For inquiries or feedback, please reach out:
+
+Email:farhadhossen2590@gmail.com
+
+GitHub: Farhad2590
+
+LinkedIn: Farhad Hossen
+

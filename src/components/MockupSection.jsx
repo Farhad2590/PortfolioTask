@@ -1,60 +1,162 @@
 import React from "react";
+import { motion } from "motion/react"
 import bgImage from "../assets/bgTwo.png";
 
 const MockupSection = () => {
+
+  const cardVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 50,
+      scale: 0.9
+    },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        delay: i * 0.3,
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    })
+  };
+
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.5
+      }
+    }
+  };
+
   return (
     <div className="relative w-full h-screen">
-      {/* Full Background */}
-      <img
+
+      <motion.img
         src={bgImage}
         alt="Background"
         className="w-full h-full object-cover"
+        initial={{ scale: 1.1, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
       />
 
-      {/* Content Overlay */}
+
       <div className="absolute inset-0 flex items-center justify-center md:justify-end py-8 px-4 sm:px-8 md:px-12 lg:pr-16">
-        {/* Mobile Grid Layout */}
-        <div className="w-full max-w-sm md:max-w-md">
-          {/* Mobile: 2x2 Grid, Desktop: Vertical Stack */}
-          <div className="grid grid-cols-2 md:grid-cols-1 gap-2 sm:gap-3 md:gap-4">
-            {/* First Row - 2 Cards */}
-            <div className="bg-white/95 backdrop-blur-sm p-2 sm:p-3 md:p-6 rounded-sm shadow-lg">
-              <h3 className="text-sm sm:text-base md:text-xl font-bold text-gray-800 mb-1 sm:mb-2 md:mb-3">
+
+        <motion.div 
+          className="w-full max-w-sm md:max-w-md"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <div className="grid grid-cols-2 md:grid-cols-1 gap-3 sm:gap-4 md:gap-4">
+            <motion.div 
+              className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-6 rounded-lg shadow-lg"
+              variants={cardVariants}
+              custom={0}
+              whileHover={{ 
+                scale: 1.03,
+                y: -5,
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.97 }}
+            >
+              <motion.h3 
+                className="text-sm sm:text-base md:text-xl font-bold text-gray-800 mb-2 sm:mb-3 md:mb-3"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8, duration: 0.6 }}
+              >
                 Branding strategy
-              </h3>
-              <p className="text-gray-600 text-xs sm:text-xs md:text-sm leading-relaxed mb-1 sm:mb-2 md:mb-3">
+              </motion.h3>
+              <motion.p 
+                className="text-gray-600 text-xs sm:text-sm md:text-sm leading-relaxed mb-2 sm:mb-3 md:mb-3"
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1, duration: 0.6 }}
+              >
                 Sample text. Click to select the text box. Click again or double
                 click to start editing the text.
-              </p>
-              <p className="text-xs text-gray-400 hidden sm:block">
+              </motion.p>
+              <motion.p 
+                className="text-xs text-gray-400 hidden sm:block"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.2, duration: 0.6 }}
+              >
                 Image from Freepik
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
 
-            <div className="bg-white/95 backdrop-blur-sm p-2 sm:p-3 md:p-6 rounded-sm shadow-lg">
-              <h3 className="text-sm sm:text-base md:text-xl font-bold text-gray-800 mb-1 sm:mb-2 md:mb-3">
+            <motion.div 
+              className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-6 rounded-lg shadow-lg"
+              variants={cardVariants}
+              custom={1}
+              whileHover={{ 
+                scale: 1.03,
+                y: -5,
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.97 }}
+            >
+              <motion.h3 
+                className="text-sm sm:text-base md:text-xl font-bold text-gray-800 mb-2 sm:mb-3 md:mb-3"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.1, duration: 0.6 }}
+              >
                 Designing logos
-              </h3>
-              <p className="text-gray-600 text-xs sm:text-xs md:text-sm leading-relaxed">
+              </motion.h3>
+              <motion.p 
+                className="text-gray-600 text-xs sm:text-sm md:text-sm leading-relaxed"
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.3, duration: 0.6 }}
+              >
                 Sample text. Click to select the text box. Click again or double
                 click to start editing the text.
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
 
-            {/* Second Row - 1 Centered Card */}
             <div className="col-span-2 md:col-span-1">
-              <div className="bg-white/95 backdrop-blur-sm p-2 sm:p-3 md:p-6 rounded-sm shadow-lg max-w-xs mx-auto md:max-w-none">
-                <h3 className="text-sm sm:text-base md:text-xl font-bold text-gray-800 mb-1 sm:mb-2 md:mb-3">
+              <motion.div 
+                className="bg-white/95 backdrop-blur-sm p-3 sm:p-4 md:p-6 rounded-lg shadow-lg max-w-xs mx-auto md:max-w-none"
+                variants={cardVariants}
+                custom={2}
+                whileHover={{ 
+                  scale: 1.03,
+                  y: -5,
+                  transition: { duration: 0.3 }
+                }}
+                whileTap={{ scale: 0.97 }}
+              >
+                <motion.h3 
+                  className="text-sm sm:text-base md:text-xl font-bold text-gray-800 mb-2 sm:mb-3 md:mb-3"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.4, duration: 0.6 }}
+                >
                   Brand identity
-                </h3>
-                <p className="text-gray-600 text-xs sm:text-xs md:text-sm leading-relaxed">
+                </motion.h3>
+                <motion.p 
+                  className="text-gray-600 text-xs sm:text-sm md:text-sm leading-relaxed"
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.6, duration: 0.6 }}
+                >
                   Sample text. Click to select the text box. Click again or
                   double click to start editing the text.
-                </p>
-              </div>
+                </motion.p>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
