@@ -33,17 +33,21 @@ Check out the live website: [https://portfolioservicework.netlify.app/](https://
 ## 📦 Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/portfolio-service-work.git
+
    ```
+
 2. Navigate to project directory:
-   ```cd portfolio-service-work```
+   cd portfolio-service-work
 3.Install dependencies:
-```npm install```
+   npm install
 4.Start development server:
-```npm run dev```
+   npm run dev
 5.Open http://localhost:3000 in your browser
 
+```
 ## 🏗️ Project Structure
 portfolio-service-work/
 ├── public/              # Static files
@@ -65,3 +69,4 @@ GitHub: Farhad2590
 
 LinkedIn: Farhad Hossen
 
+```
