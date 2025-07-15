@@ -7,11 +7,11 @@
 
 A modern portfolio website built with React, Tailwind CSS, Framer Motion animations, and Lucide React icons.
 
-## 🚀 Live Demo
+##  Live Demo
 
 Check out the live website: [https://portfolioservicework.netlify.app/](https://portfolioservicework.netlify.app/)
 
-## ✨ Features
+## Features
 
 - **Modern UI** with smooth animations
 - **Fully responsive** design
@@ -21,7 +21,7 @@ Check out the live website: [https://portfolioservicework.netlify.app/](https://
 - **SEO friendly** structure
 - **Contact form** functionality
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Frontend**: React.js
 - **Styling**: Tailwind CSS
@@ -30,7 +30,7 @@ Check out the live website: [https://portfolioservicework.netlify.app/](https://
 - **Bundler**: Vite
 - **Hosting**: Netlify
 
-## 📦 Installation
+## Installation
 
 1. Clone the repository:
 
@@ -41,13 +41,16 @@ Check out the live website: [https://portfolioservicework.netlify.app/](https://
 
 2. Navigate to project directory:
    cd portfolio-service-work
-3.Install dependencies:
-   npm install
-4.Start development server:
-   npm run dev
-5.Open http://localhost:3000 in your browser
 
-```
+3. Install dependencies:
+   npm install
+
+4. Start development server:
+   npm run dev
+
+5. Open http://localhost:3000 in your browser
+
+
 ## 🏗️ Project Structure
 portfolio-service-work/
 ├── public/              # Static files
@@ -61,7 +64,7 @@ portfolio-service-work/
 ├── README.md
 └── vite.config.js
 ## 📬 Contact
-For inquiries or feedback, please reach out:
+ For inquiries or feedback, please reach out:
 
 Email:farhadhossen2590@gmail.com
 
@@ -69,4 +72,3 @@ GitHub: Farhad2590
 
 LinkedIn: Farhad Hossen
 
-```
